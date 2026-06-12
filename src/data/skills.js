@@ -1,14 +1,14 @@
 export const skillBars = [
-  { name: "HTML / CSS", level: 95 },
-  { name: "JavaScript", level: 88 },
-  { name: "React", level: 86 },
-  { name: "Python", level: 82 },
-  { name: "C++ / Java", level: 76 },
+  { name: "React / Tailwind CSS", level: 92 },
+  { name: "JavaScript / TypeScript", level: 88 },
+  { name: "Node.js / Express", level: 84 },
+  { name: "Python", level: 70 },
+  { name: "C++", level: 60 },
 ];
 
 export const techGroups = [
-  { title: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"] },
-  { title: "Backend", items: ["Node.js", "Express.js", "Python", "REST APIs"] },
-  { title: "Database", items: ["MongoDB", "MySQL", "Firebase"] },
-  { title: "Tools", items: ["Git & GitHub", "VS Code", "Linux", "Postman"] },
+  { title: "Frontend", items: ["JavaScript", "React", "Tailwind CSS"] },
+  { title: "Languages", items: ["TypeScript", "Python", "C++", "Java"] },
+  { title: "Backend & Data", items: ["Node.js", "Express.js", "MongoDB", "MySQL"] },
+  { title: "Tools", items: ["Git & GitHub", "VS Code", "Linux"] },
 ];

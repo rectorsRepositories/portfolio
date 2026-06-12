@@ -6,26 +6,32 @@ export function ProjectCard({ project }) {
     <article className="project-card">
       <div className="project-image-wrap">
         <img className="project-image" src={project.image} alt="" />
-        <div className="project-links">
-          <a
-            className="project-link"
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`View ${project.title} on GitHub`}
-          >
-            <FaGithub aria-hidden="true" />
-          </a>
-          <a
-            className="project-link"
-            href={project.demo}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Open live demo for ${project.title}`}
-          >
-            <FiExternalLink aria-hidden="true" />
-          </a>
-        </div>
+        {project.github || project.demo ? (
+          <div className="project-links">
+            {project.github ? (
+              <a
+                className="project-link"
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${project.title} on GitHub`}
+              >
+                <FaGithub aria-hidden="true" />
+              </a>
+            ) : null}
+            {project.demo ? (
+              <a
+                className="project-link"
+                href={project.demo}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open live demo for ${project.title}`}
+              >
+                <FiExternalLink aria-hidden="true" />
+              </a>
+            ) : null}
+          </div>
+        ) : null}
       </div>
       <div className="project-body">
         <h3 className="project-title">{project.title}</h3>

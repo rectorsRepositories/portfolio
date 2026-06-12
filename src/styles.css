@@ -405,8 +405,8 @@ a {
 
 .skills-panel .section-inner {
   background:
-    linear-gradient(180deg, rgba(5, 6, 18, 0.3), rgba(5, 6, 18, 0.95)),
-    url("/assets/wireframe-landscape.png") right bottom / 100% auto no-repeat;
+    linear-gradient(180deg, rgba(5, 6, 18, 0.42), rgba(5, 6, 18, 0.9)),
+    url("/assets/wireframe-landscape.png") center / cover no-repeat;
 }
 
 .skill-list {
@@ -723,8 +723,8 @@ a {
 
 .tech-panel .section-inner {
   background:
-    linear-gradient(90deg, rgba(5, 6, 18, 0.98), rgba(5, 6, 18, 0.64)),
-    url("/assets/wireframe-landscape.png") right bottom / 65% auto no-repeat;
+    linear-gradient(90deg, rgba(5, 6, 18, 0.92), rgba(5, 6, 18, 0.58)),
+    url("/assets/wireframe-landscape.png") center / cover no-repeat;
 }
 
 .tech-grid {

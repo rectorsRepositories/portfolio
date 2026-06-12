@@ -10,13 +10,13 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
+  SiCplusplus,
   SiExpress,
-  SiFirebase,
   SiJavascript,
   SiMongodb,
   SiMysql,
-  SiPostman,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 import { VscCode, VscGithub } from "react-icons/vsc";
 import { techGroups } from "../data/skills.js";
@@ -25,19 +25,18 @@ const iconMap = {
   HTML: FaHtml5,
   CSS: FaCss3Alt,
   JavaScript: SiJavascript,
+  TypeScript: SiTypescript,
   React: FaReact,
   "Tailwind CSS": SiTailwindcss,
   "Node.js": FaNodeJs,
   "Express.js": SiExpress,
   Python: FaPython,
-  "REST APIs": FaJava,
+  "C++": SiCplusplus,
   MongoDB: SiMongodb,
   MySQL: SiMysql,
-  Firebase: SiFirebase,
   "Git & GitHub": FaGitAlt,
   "VS Code": VscCode,
   Linux: FaLinux,
-  Postman: SiPostman,
   Database: FaDatabase,
   GitHub: VscGithub,
 };

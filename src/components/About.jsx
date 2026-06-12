@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
 
 const stats = [
-  ["2+", "Years of Experience"],
-  ["15+", "Projects Completed"],
-  ["12+", "Technologies"],
-  ["100%", "Commitment"],
+  ["React", "Frontend"],
+  ["Node.js", "Backend"],
+  ["SQL", "Database"],
+  ["Git", "Workflow"],
 ];
 
 export function About() {
@@ -22,12 +22,12 @@ export function About() {
           >
             <h2 className="section-title" id="about-title">About Me</h2>
             <p>
-              I&apos;m a computer science student and web developer who enjoys turning
-              ideas into real, usable digital experiences.
+              I&apos;m Brayton Rector, a computer science student and web developer
+              based in Terre Haute, Indiana.
             </p>
             <p>
-              I care about thoughtful problem solving, learning new technologies,
-              and building work that makes a clear impact.
+              I focus on responsive interfaces, full-stack applications, performance,
+              usability, and clean design.
             </p>
             <a className="glow-button secondary compact-button" href="/resume.txt" download>
               Download resume <FiDownload aria-hidden="true" />

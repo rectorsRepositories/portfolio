@@ -1,20 +1,20 @@
 export const experience = [
   {
-    date: "2025 - Present",
-    title: "Freelance Web Developer",
-    company: "Self-Employed",
-    description: "Building custom websites and web applications for clients with modern technologies.",
+    date: "Current Focus",
+    title: "Web Developer",
+    company: "Full-Stack Development",
+    description: "Building responsive interfaces and full-stack applications with performance, usability, and clean design in mind.",
   },
   {
-    date: "2024 - 2025",
-    title: "Software Development Projects",
-    company: "Independent",
-    description: "Designed and shipped full-stack applications, APIs, and responsive user interfaces.",
+    date: "Technical Skills",
+    title: "Software Development",
+    company: "Frontend, Backend, and Databases",
+    description: "Working with React, TypeScript, Node.js, Express, Python, C++, Java, MongoDB, MySQL, Git, and Linux.",
   },
   {
     date: "2023 - Present",
     title: "Computer Science Student",
-    company: "University Name",
-    description: "Pursuing a B.S. in Computer Science with a focus on software engineering and web technology.",
+    company: "Southern New Hampshire University",
+    description: "Pursuing a Bachelor of Science in Computer Science.",
   },
 ];

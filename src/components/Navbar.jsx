@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiDownload, FiMenu, FiX } from "react-icons/fi";
 
-const homeLinks = ["home", "about", "projects"];
+const homeLinks = ["home"];
 
 export function Navbar() {
   const path = window.location.pathname;

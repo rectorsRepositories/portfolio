@@ -1,8 +1,8 @@
-YOUR NAME
+Brayton Rector
 Computer Science Student & Web Developer
 
-Email: youremail@example.com
-Location: Your City, Country
+Email: brector77777@gmail.com
+Location: Terre Haute, Indiana, USA
 
 SUMMARY
 Computer science student and web developer focused on responsive interfaces,
@@ -16,4 +16,3 @@ EDUCATION
 Bachelor of Science in Computer Science
 University Name, 2023 - Present
 
-Replace this placeholder resume with your final PDF or document.

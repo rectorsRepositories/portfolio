@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiDribbble } from "react-icons/si";
+import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
 
 export function Contact() {
   const [status, setStatus] = useState("");
@@ -9,7 +7,7 @@ export function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-    setStatus("Thanks — your message is ready to send.");
+    setStatus("Thanks - your message is ready to send.");
     form.reset();
   };
 
@@ -21,19 +19,21 @@ export function Contact() {
           <div>
             <h2 className="section-title" id="contact-title">Let&apos;s Work Together</h2>
             <div className="contact-list">
-              <a className="contact-item" href="mailto:youremail@example.com">
-                <FiMail aria-hidden="true" /> youremail@example.com
+              <a className="contact-item" href="mailto:brector77777@gmail.com">
+                <FiMail aria-hidden="true" /> brector77777@gmail.com
               </a>
-              <a className="contact-item" href="tel:+11234567890">
-                <FiPhone aria-hidden="true" /> (123) 456-7890
-              </a>
-              <span className="contact-item"><FiMapPin aria-hidden="true" /> Your City, Country</span>
+              <span className="contact-item">
+                <FiMapPin aria-hidden="true" /> Terre Haute, Indiana, USA
+              </span>
             </div>
             <div className="social-row">
-              <a className="social-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
-              <a className="social-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
-              <a className="social-link" href="https://dribbble.com/" target="_blank" rel="noreferrer" aria-label="Dribbble"><SiDribbble /></a>
-              <a className="social-link" href="mailto:youremail@example.com" aria-label="Email"><FiMail /></a>
+              <a
+                className="social-link"
+                href="mailto:brector77777@gmail.com"
+                aria-label="Email Brayton Rector"
+              >
+                <FiMail />
+              </a>
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
