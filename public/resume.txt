@@ -1,0 +1,19 @@
+YOUR NAME
+Computer Science Student & Web Developer
+
+Email: youremail@example.com
+Location: Your City, Country
+
+SUMMARY
+Computer science student and web developer focused on responsive interfaces,
+full-stack applications, performance, usability, and clean design.
+
+SKILLS
+React, JavaScript, TypeScript, Tailwind CSS, Node.js, Express, Python,
+C++, Java, MongoDB, MySQL, Git, GitHub, Linux, and VS Code.
+
+EDUCATION
+Bachelor of Science in Computer Science
+University Name, 2023 - Present
+
+Replace this placeholder resume with your final PDF or document.
