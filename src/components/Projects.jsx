@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { projects } from "../data/projects.js";
+import { revealUp, staggerContainer, viewport } from "../motion.js";
 import { ProjectCard } from "./ProjectCard.jsx";
 
 export function Projects() {
@@ -10,8 +11,22 @@ export function Projects() {
   return (
     <section className="panel projects-panel" id="projects" aria-labelledby="projects-title">
       <div className="section-inner">
-        <span className="section-label">/ projects</span>
-        <div className="section-heading-row">
+        <motion.span
+          className="section-label"
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+        >
+          / projects
+        </motion.span>
+        <motion.div
+          className="section-heading-row"
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+        >
           <h2 className="section-title" id="projects-title">Featured Projects</h2>
           <button
             className="glow-button secondary compact-button"
@@ -21,15 +36,21 @@ export function Projects() {
           >
             {expanded ? "Show featured" : "View all projects"}
           </button>
-        </div>
-        <motion.div className="projects-grid" layout>
+        </motion.div>
+        <motion.div
+          className="projects-grid"
+          layout
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+        >
           <AnimatePresence initial={false}>
             {visibleProjects.map((project) => (
               <motion.div
                 key={project.title}
                 layout
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
+                variants={revealUp}
                 exit={{ opacity: 0, y: 12 }}
               >
                 <ProjectCard project={project} />

@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import { revealLeft, revealRight, revealUp, staggerContainer, viewport } from "../motion.js";
 
 export function Contact() {
   const [status, setStatus] = useState("");
@@ -14,19 +16,21 @@ export function Contact() {
   return (
     <section className="panel contact-panel" id="contact" aria-labelledby="contact-title">
       <div className="section-inner">
-        <span className="section-label">/ contact</span>
+        <motion.span className="section-label" variants={revealUp} initial="hidden" whileInView="visible" viewport={viewport}>
+          / contact
+        </motion.span>
         <div className="contact-layout">
-          <div>
-            <h2 className="section-title" id="contact-title">Let&apos;s Work Together</h2>
-            <div className="contact-list">
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewport}>
+            <motion.h2 className="section-title" id="contact-title" variants={revealLeft}>Let&apos;s Work Together</motion.h2>
+            <motion.div className="contact-list" variants={revealUp}>
               <a className="contact-item" href="mailto:brector77777@gmail.com">
                 <FiMail aria-hidden="true" /> brector77777@gmail.com
               </a>
               <span className="contact-item">
                 <FiMapPin aria-hidden="true" /> Terre Haute, Indiana, USA
               </span>
-            </div>
-            <div className="social-row">
+            </motion.div>
+            <motion.div className="social-row" variants={revealUp}>
               <a
                 className="social-link"
                 href="mailto:brector77777@gmail.com"
@@ -34,9 +38,16 @@ export function Contact() {
               >
                 <FiMail />
               </a>
-            </div>
-          </div>
-          <form className="contact-form" onSubmit={handleSubmit}>
+            </motion.div>
+          </motion.div>
+          <motion.form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            variants={revealRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
+          >
             <input name="name" placeholder="Name" aria-label="Name" required />
             <input name="email" type="email" placeholder="Email" aria-label="Email" required />
             <input className="field-wide" name="subject" placeholder="Subject" aria-label="Subject" required />
@@ -45,7 +56,7 @@ export function Contact() {
               Send message <FiSend aria-hidden="true" />
             </button>
             <span className="form-status" role="status">{status}</span>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>

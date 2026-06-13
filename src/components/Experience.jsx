@@ -1,22 +1,28 @@
+import { motion } from "framer-motion";
 import { experience } from "../data/experience.js";
+import { revealLeft, revealUp, staggerContainer, viewport } from "../motion.js";
 
 export function Experience() {
   return (
     <section className="panel experience-panel" id="experience" aria-labelledby="experience-title">
       <div className="section-inner">
-        <span className="section-label">/ experience</span>
-        <h2 className="section-title" id="experience-title">Experience</h2>
-        <div className="timeline">
+        <motion.span className="section-label" variants={revealUp} initial="hidden" whileInView="visible" viewport={viewport}>
+          / experience
+        </motion.span>
+        <motion.h2 className="section-title" id="experience-title" variants={revealLeft} initial="hidden" whileInView="visible" viewport={viewport}>
+          Experience
+        </motion.h2>
+        <motion.div className="timeline" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewport}>
           {experience.map((item) => (
-            <article className="timeline-item" key={item.title}>
+            <motion.article className="timeline-item" key={item.title} variants={revealUp}>
               <span className="timeline-dot" aria-hidden="true" />
               <time className="timeline-date">{item.date}</time>
               <h3 className="timeline-title">{item.title}</h3>
               <div className="timeline-company">{item.company}</div>
               <p className="timeline-copy">{item.description}</p>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

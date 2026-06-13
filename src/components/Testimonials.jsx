@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { floatingImage, revealUp, viewport } from "../motion.js";
 
 const focusAreas = [
   {
@@ -40,7 +41,9 @@ export function Testimonials() {
     <section className="panel testimonials-panel" aria-labelledby="focus-title">
       <div className="section-inner">
         <div className="testimonial-content">
-          <span className="section-label">/ focus</span>
+          <motion.span className="section-label" variants={revealUp} initial="hidden" whileInView="visible" viewport={viewport}>
+            / focus
+          </motion.span>
           <h2 className="sr-only" id="focus-title">Professional Focus</h2>
           <span className="quote-mark" aria-hidden="true">&ldquo;</span>
           <AnimatePresence mode="wait">
@@ -76,7 +79,12 @@ export function Testimonials() {
             </button>
           </div>
         </div>
-        <img className="testimonial-art" src="/assets/neon-bust.png" alt="" />
+        <motion.img
+          className="testimonial-art"
+          src="/assets/neon-bust.png"
+          alt=""
+          animate={floatingImage}
+        />
       </div>
     </section>
   );
