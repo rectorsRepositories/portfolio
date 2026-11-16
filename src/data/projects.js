@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: "Archivify",
+    description: "A self-hosted media library that indexes local files and makes them searchable in a browser.",
+    image: "/assets/project-archivify.png",
+    tags: ["React", "Node.js", "SQLite"],
+    github: "https://github.com/rectorsRepositories/Archivify",
+    demo: null,
+  },
+  {
+    title: "ChessJS",
+    description: "An interactive chessboard built with JavaScript and p5.js for playing in the browser.",
+    image: "/assets/project-chessjs.jpg",
+    tags: ["JavaScript", "p5.js", "HTML Canvas"],
+    github: "https://github.com/rectorsRepositories/ChessJS",
+    demo: "https://chessjsbr.netlify.app/",
+  },
+  {
     title: "Portfolio Website",
     description: "A personal portfolio built with responsive React components and a neon visual system.",
     image: "/assets/project-portfolio.png",
